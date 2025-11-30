@@ -19,7 +19,13 @@ const pool = new Pool({
       : false,
 });
 
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL || "*",
+    credentials: false,
+  })
+);
+
 app.use(express.json());
 
 interface Recipe {
