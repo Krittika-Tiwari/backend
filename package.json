@@ -7,7 +7,7 @@
     "dev": "nodemon",
     "build": "tsc",
     "start": "node dist/server.js",
-    "setup-db": "node src/setup-database.js"
+    "setup-db": "node dist/setup-database.js"
   },
   "keywords": [],
   "author": "",
